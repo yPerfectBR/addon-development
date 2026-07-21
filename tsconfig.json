@@ -28,7 +28,8 @@
        "noPropertyAccessFromIndexSignature": true,
        "exactOptionalPropertyTypes": true,
        "allowUnreachableCode": false,
-       "allowUnusedLabels": false,
+       // Required for esbuild dropLabels (`dev:` blocks in production builds)
+       "allowUnusedLabels": true,
        "noImplicitUseStrict":false,
        "outDir":"lib",
        "rootDir": ".",
